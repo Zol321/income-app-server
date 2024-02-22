@@ -1,7 +1,7 @@
 const Router = require("express");
 const router = Router();
 const { createUser, loginUser } = require("../controller/userController");
-const userModel = require("../database/schema/userModel");
+const userModel = require("../Schema/userModel");
 
 const valiadateEmailAddress = async (req, res, next) => {
   const userData = req.body;
